@@ -1,14 +1,18 @@
-*.java          text
-*.md            text
-*.yml           text
-*.xml           text
-*.gradle        text
-*.properties    text
-mvnw            text eol=lf
-*.sh            text eol=lf
-*.bat           text eol=crlf
-*.cmd           text eol=crlf
+*.java          text zos-working-tree-encoding=UTF8 git-encoding=UTF8
+*.md            text zos-working-tree-encoding=UTF8 git-encoding=UTF8
+*.yml           text zos-working-tree-encoding=UTF8 git-encoding=UTF8
+*.xml           text zos-working-tree-encoding=UTF8 git-encoding=UTF8
+*.gradle        text zos-working-tree-encoding=UTF8 git-encoding=UTF8
+*.properties    text zos-working-tree-encoding=UTF8 git-encoding=UTF8
+mvnw            text eol=lf zos-working-tree-encoding=UTF8 git-encoding=UTF8
+*.sh            text eol=lf zos-working-tree-encoding=UTF8 git-encoding=UTF8
+*.bat           text eol=crlf zos-working-tree-encoding=UTF8 git-encoding=UTF8
+*.cmd           text eol=crlf zos-working-tree-encoding=UTF8 git-encoding=UTF8
 *.jar           binary
 
-src/test/resources/samples/*.txt text eol=lf
-src/test/resources/samples/*.out text eol=lf
+src/test/resources/samples/*.txt text eol=lf zos-working-tree-encoding=UTF8 git-encoding=UTF8
+src/test/resources/samples/*.out text eol=lf zos-working-tree-encoding=UTF8 git-encoding=UTF8
+
+# The git attributes and ignore files MUST be ASCII
+*.gitattributes  zos-working-tree-encoding=iso8859-1 git-encoding=UTF8
+*.gitignore      zos-working-tree-encoding=iso8859-1 git-encoding=UTF8
